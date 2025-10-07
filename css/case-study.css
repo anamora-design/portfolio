@@ -1,0 +1,500 @@
+/* Typography & Colors */
+:root {
+    --primary: #3B3BE0; /* Punchy Indigo */
+    --accent: #FF5AF8; /* Punchy Pink */
+    --white: #FFFFFF;
+    --ink: #3A1927; /* Plum */
+    --shell: #F9F4F9; /* Soft Pink */
+}
+/* Case Study Hero */
+.case-study-hero {
+    min-height: 60vh;
+    background: var(--white);
+    padding-top: 160px;
+    padding-bottom: 2rem;
+}
+
+.case-study-tags {
+    font-family: 'Fraunces';
+    color: #555555;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+/* H1 */
+.case-study-title h1 {
+    font-family: 'Fraunces';
+    color: var(--ink);
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+}
+
+/* Add new container class */
+.image-container {
+    position: relative;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Update small image */
+.case-study-small-image {
+    background: #F8F0F8;
+    border-radius: 24px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.case-study-small-image img {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Update medium image */
+
+.case-study-medium-image {
+    background: #F8F0F8;
+    border-radius: 24px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.case-study-medium-image img {
+    width: 75%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+
+}
+/* Update large image */
+.case-study-large-image {
+    background: #F8F0F8;
+    border-radius: 24px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.case-study-large-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+
+}
+
+/* Constrain text containers to match image widths */
+.case-study-small-image .text-overlay {
+    font-family: 'DM Sans';
+    font-size: clamp(0.75rem, 1.5vw, 1.25rem);
+    font-weight: 300;
+    width: 50%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.case-study-medium-image .text-overlay {
+    font-family: 'DM Sans';
+    font-size: clamp(0.75rem, 1.5vw, 1.25rem);
+    font-weight: 300;
+    width: 75%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.case-study-large-image .text-overlay {
+    font-family: 'DM Sans';
+    font-size: clamp(0.75rem, 1.5vw, 1.25rem);
+    font-weight: 300;
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.case-study-image-block .text-overlay p:last-child,
+.case-study-small-image .text-overlay p:last-child,
+.case-study-medium-image .text-overlay p:last-child,
+.case-study-large-image .text-overlay p:last-child {
+    margin-bottom: 0;
+}
+
+/* Text columns container - default positioning */
+.text-columns-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Top caption - text appears above the image */
+.text-columns-container.left-caption {
+    font-family: 'DM Sans';
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    order: -1; /* Places it before the image in flexbox order */
+    justify-content: flex-start;
+}
+
+/* Bottom caption - text appears below the image (default) */
+.text-columns-container.right-caption {
+    font-family: 'DM Sans';
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    margin-top: 1rem;
+    margin-bottom: 0;
+    order: 1; 
+    text-align: right;
+    justify-content: flex-end;
+}
+
+/* Individual text column */
+.text-column {
+    font-family: 'DM Sans';
+    color: var(--ink);
+    font-size: clamp(0.75rem, 1.5vw, 1.25rem);
+    font-weight: 300;
+    line-height: 1.3;
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+
+.text-column h5 {
+    font-family: 'Fraunces';
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--ink);
+}
+.text-column p {
+    margin-bottom: 1rem;
+}
+
+.text-column p:last-child {
+    margin-bottom: 0;
+}
+
+/* Position background image behind metadata sidebar */
+#introduction-content .row {
+    position: relative;
+}
+
+.background-element {
+    position: absolute;
+    right: -10vw;
+    top: -215px;
+    width: 40%;
+    height: auto;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Sunflower animation (same as fern) */
+.sway-animation {
+    animation: sunflowerSway 6s ease-in-out infinite;
+}
+
+@keyframes sunflowerSway {
+    0%, 100% {
+        transform: rotate(0deg) scale(1);
+    }
+    25% {
+        transform: rotate(-1deg) scale(0.995);
+    }
+    75% {
+        transform: rotate(1deg) scale(0.995);
+    }
+}
+/* Main section titles (h2) */
+.section-category-title h2 {
+    font-family: 'Fraunces';
+    color: var(--primary);
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1;
+}
+
+/* Subsection titles (h3) */
+.case-study-content-title h3 {
+    font-family: 'Fraunces';
+    color: var(--ink);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+.case-study-sub-title h4 {
+    font-family: 'Fraunces';
+    color: var(--ink);
+    font-size: clamp(1.5rem, 2.5vw, 1.5rem);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+/* Body text with enhanced styling */
+.body-text {
+    font-family: 'DM Sans';
+    color: var(--ink);
+    font-size: clamp (1rem, 2.5vw, 1.5rem);
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+/* Metrics */
+.body-text-result {
+    font-family: 'Fraunces';
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-weight: 300;
+    color: #444;
+    padding-left: 1.5rem;
+    margin-left: -1.5rem;
+    background: rgba(59, 59, 224, 0.05);
+    padding: 1.5rem;
+    border-radius: 24px;
+}
+/* List item spacing */
+.body-text li {
+    margin-bottom: 1rem;
+}
+
+.body-text li:last-child {
+    margin-bottom: 0;
+}
+/* Italic text styling */
+.italic-text {
+    font-family: 'DM sans';
+    font-style: italic;
+    color: #666;
+    font-weight: 200;
+}
+
+/* Hypothesis Containers*/
+.hypothesis-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.hypothesis-card {
+    background: var(--shell);
+    border-radius: 24px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.hypothesis-card h3 {
+    font-family: 'Fraunces';
+    text-align: center;
+    color: var(--primary);
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+/* Make it responsive */
+@media (max-width: 992px) {
+    .hypothesis-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+/* Metadata sidebar (My Role, Timeline etc.) */
+.metadata-sidebar {
+    background: #FFFFFF;
+    border: 2px solid #E8D5E8;
+    border-radius: 24px;
+    margin-top: 1rem;
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+}
+
+.metadata-item {
+    margin-bottom: 2em;
+}
+
+.metadata-item:last-child {
+    margin-bottom: 0;
+}
+
+.metadata-title {
+    font-family: 'Fraunces';
+    color: var(--ink);
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.metadata-content {
+    font-family: 'DM Sans';
+    color: #555;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.section-padding {
+    background: var(--white);
+    padding: 2rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .case-study-content .body-text {
+        text-align: left;
+    }
+    
+    .case-study-content .body-text:first-of-type {
+        margin-left: 0;
+        padding-left: 1rem;
+    }
+    
+    .metadata-sidebar {
+        margin-top: 2rem;
+        position: static;
+    }
+    
+}
+/* For very small screens, you might want to hide it */
+@media (max-width: 992px) {
+    .background-element {
+        display: none;  /* Hide on very small screens */
+    }
+}
+
+.case-study-hero .container,
+.section-padding .container {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+/* Secondary Navigation */
+.case-study-nav {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    padding-left: 0.25rem;
+    padding-right: 0.5rem;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+.case-study-nav-list {
+    list-style: none;
+    padding-left: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+.case-study-nav-list li {
+    margin-bottom: .5rem;
+}
+
+.case-study-nav-list li:last-child {
+    margin-bottom: 0;
+}
+/*This is the hover state */
+.case-study-nav-list a {
+    color: var(--primary);
+    text-decoration: none;
+    font-family: 'Fraunces';
+    font-size: 1rem;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    display: block;
+    padding: 0.5rem 0.5rem;
+    border-radius: 12px;
+}
+
+.case-study-nav-list a:hover {
+    background: rgba(59, 59, 224, 0.1);
+    transform: translateX(5px);
+}
+
+.case-study-nav-list a.active {
+    color: var(--primary);
+    font-weight: 500;
+    background: rgba(59, 59, 224, 0.1);
+    transform: translateX(5px);
+}
+.case-study-nav-list a.indented {
+    margin-left: 1rem;
+}
+
+/* Video block component */
+.case-study-video-block {
+    background: #F8F0F8;
+    border-radius: 24px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.case-study-video-block video {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto; /* Center the video horizontally */
+}
+
+
+/* Hide secondary nav on mobile */
+@media (max-width: 1300px) {
+    .case-study-nav {
+        display: none;
+    }
+}

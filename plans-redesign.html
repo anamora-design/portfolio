@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redesigning Chegg's "Interstitial" Plans Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:opsz,wght@1,9..144,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/case-study.css">
+</head>
+<body>
+    <header class="site-header light-nav py-3" id="mainHeader" style="position: absolute; top: 0; left: 0; right: 0; z-index: 1000; width: 100%;">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg justify-content-between">
+                <a class="navbar-brand fw-bold" href="index.html">Ana Mora | Product Designer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="primaryNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
+                        <li class="nav-item"><a class="nav-link" href="index.html#work">Case Studies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://docs.google.com/document/d/1-56R_Y_L3cqw9-M-LAv1Q8lTteqAGHdh" target="_blank">Resume</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Secondary Navigation -->
+        <nav class="case-study-nav">
+            <ul class="case-study-nav-list">
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#user-flow" class="indented">User flow</a></li>
+                <li><a href="#problem-to-be-solved" class="indented">Problem to be solved</a></li>
+                <li><a href="#design-process">Design Process</a></li>
+                <li><a href="#supporting-data" class="indented">Research & Data</a></li>
+                <li><a href="#hypotheses" class="indented">Hypotheses</a></li>
+                <li><a href="#design-exploration" class="indented">Design Exploration</a></li>
+                <li><a href="#influence" class="indented">Influence</a></li>
+                <li><a href="#experimentation" class="indented">Experimentation</a></li>
+                <li><a href="#refinement" class="indented">Refining visuals</a></li>
+                <li><a href="#outcomes">Outcomes</a></li>
+            </ul>
+        </nav>
+
+        <!-- Case Study Hero -->
+        <section class="case-study-hero position-relative" id="case-study-hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="case-study-content">
+                            <p class="case-study-tags" data-aos="fade-up">Growth, B2C, Responsive Web</p>
+                            <div class="case-study-title" data-aos="fade-up" data-aos-delay="100">
+                                <h1>Redesigning Chegg's "Interstitial" Plans Page</h1>
+                            </div>
+                        <div class="image-container position-relative">
+                            <div class="case-study-large-image" data-aos="fade-up" data-aos-delay="150">
+                                <div class="text-columns-container left-caption">
+                                        <p>How I went from this...</p>
+                                    </div>
+                                <img src="assets/case-study-plans/hero-1.png" alt="Preview of the plans interstitial page" class="img-fluid">
+                                <div class="text-columns-container right-caption">
+                                    <p>...to this!</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="section-padding" id="introduction">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-category-title">
+                            <h2>Introduction</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction Content -->
+        <section class="section-padding" id="introduction-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="case-study-sub-title">
+                            <h4>Background</h4>
+                            <p class="body-text italic-text">Chegg is a popular subscription-based homework help platform for 8+ million college students worldwide.</p>
+                            <p class="body-text">The plans interstitial page is the primary conversion step in Chegg's lower funnel. Due to it's financial impacts, this surface had been optimized through heavy experimentation, leading to stagnating growth from conservative changes.</p>
+                            <p class="body-text">I created a new vision for this surface, leading the charge on a variety of design changes that lead to:</p>
+                            <p class="body-text-result">7% Increase in CVR ($8-10M/YoY)</p>
+                        </div>       
+                        <!-- Image block -->
+                        <div class="background-element">
+                            <img src="assets/images/Sunflower.png" alt="Image of a sunflower" class="img-fluid sway-animation">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="metadata-sidebar">
+                            <div class="metadata-item">
+                                <h4 class="metadata-title">My Role</h4>
+                                <p class="metadata-content">Market Research, UX Strategy, Visual Design, Prototyping</p>
+                            </div>
+                            <div class="metadata-item">
+                                <h4 class="metadata-title">Timeline</h4>
+                                <p class="metadata-content">2.5 Months</p>
+                            </div>
+                            <div class="metadata-item">
+                                <h4 class="metadata-title">Cross-functional Partners</h4>
+                                <p class="metadata-content">Biz-Ops, Product Marketing, Analytics, Engineering, Creative Marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Flow Diagram -->
+        <section class="section-padding" id="user-flow">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="case-study-sub-title">
+                            <h4>Good to know: how do you even get to this page?</h4>
+                            <div class="image-container position-relative">
+                                <div class="case-study-large-image" data-aos="fade-up" data-aos-delay="150">
+                                    <img src="assets/case-study-plans/flow-diagram.png" alt="Flow diagram of Chegg lower funnel" class="img-fluid">
+                                <div class="text-columns-container">
+                                    <div class="text-column">
+                                        <p>From Google search, you land on a content page.</p>
+                                    </div>
+                                    <div class="text-column">
+                                        <p>Authenticate</p>
+                                    </div>
+                                    <div class="text-column">
+                                        <p>Select plan - <strong>WE ARE HERE</strong></p>
+                                    </div>
+                                    <div class="text-column">
+                                        <p>Checkout</p>
+                                    </div>
+                                    <div class="text-column">
+                                        <p>Signed-in content page</p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>       
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Problem to be solved -->
+        <section class="section-padding" id="problem-to-be-solved">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="case-study-content-title">
+                            <h3>Problem to be solved</h3>
+                            <p class="body-text">This project began as a last-ditch initiative to gauge the viability of a multi-month plan (versus monthly), with a hefty goal of increasing CVR conversion rate by at least 2% on the plans interstitial page - the main point of conversion for Chegg customers.</p>
+                            <p class="body-text">Given that this surface was tied directly to revenue, it was safe guarded through experimentation and became highly optimized. In other words, small changes like adding icons or fixing copy had little effect. We hypothesized that to have any chance of significantly improving our metric, we would have to <strong>take a bold approach - with no definition of what this meant for us.</strong></p>
+                        </div>   
+                        <div class="image-container position-relative">
+                            <div class="case-study-image-block" data-aos="fade-up" data-aos-delay="200">
+                                <!-- Content placeholder - this is where the main case study content would go -->
+                            </div>
+                            <div class="case-study-large-image" data-aos="fade-up" data-aos-delay="150">
+                                <img src="assets/case-study-plans/control.png" alt="Example of previous design" class="img-fluid">                                <div class="text-overlay">
+                                    <p>My previous design iteration for multi-month plans, using the “status quo” look & feel. Minimal CVR gains. </p>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Design Process Section -->
+        <section class="section-padding" id="design-process">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-category-title">
+                            <h2>Design Process</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+          <!-- Supporting Research & Data -->
+          <section class="section-padding" id="supporting-data">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="case-study-content-title">
+                            <h3>Supporting Research and Data</h3>
+                        <div class ="case-study-sub-title">
+                            <h4>Foundational</h4>
+                        </div>    
+                            <p class="body-text">Chegg’s primary customer base are college students, who are generally more cost-adverse. Students tend to be more careful in their purchasing habits, holding higher standards toward <strong>personal gained value versus cost.</strong> To assess quality, students also gravitate towards products or experiences that are <strong>highly rated by their peers.</strong></p>
+                            <p class="body-text">While Chegg offered a variety of learning tools and supported more than STEM subjects, we had found that many students were <strong>not aware of this offering.</strong> When given a more thorough explanation of Chegg’s value in interviews, students became excited and understood the prospect of how this would fit within their own study goals. Additionally, <strong>Gen-Z was becoming the most prominent customer base.</strong></p>
+                        </div>   
+                        <div class="image-container position-relative">
+                            <div class="case-study-medium-image" data-aos="fade-up" data-aos-delay="150">
+                                <img src="assets/case-study-plans/college_graph.png" alt="Line Graph of college student demographics over time" class="img-fluid">
+                                <div class="text-overlay">
+                                    <p>Focusing on the needs of Gen-Z is crucial for Chegg's success, as the demographic of Millenial students is dropping sharply.</p>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="case-study-sub-title">
+                            <h4>Gauging the competitive landscape</h4>
+                            <p class="body-text">With the short timeframe and lack of resources that I had, I decided to conduct a competitive analysis on primary and secondary competitors to fill in some of the gaps for understanding what may resonate more with Gen-Z from a look and feel perspective. I noticed the prominent usage of darker, high contrast visuals, larger headers with impactful statements and a more casual tone of voice.</p>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </section>
+
+          <!-- Defining Bold -->
+          <section class="section-padding" id="hypotheses">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="case-study-content-title">
+                            <h3>Defining the “bold approach” from a design perspective</h3>
+                            <p class="body-text">Based on the research, I identified 3 hypotheses that I wanted to create solutions for and test.</p>
+                        </div>   
+                        <div class="hypothesis-container">
+                            <div class="hypothesis-card">
+                                <h3>Hypothesis #1</h3>
+                                <p class="body-text">The current look and feel does not resonate with Gen-Z customers</p>
+                            </div>
+                            
+                            <div class="hypothesis-card">
+                                <h3>Hypothesis #2</h3>
+                                <p class="body-text">The current experience lacks a voice that resonates with Gen-Z customers</p>
+                            </div>
+                            
+                            <div class="hypothesis-card">
+                                <h3>Hypothesis #3</h3>
+                                <p class="body-text">The current experience lacks the information customers need to feel good about subscribing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Design Exploration -->
+        <section class="section-padding" id="design-exploration">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                            <div class="case-study-content-title">
+                                <h3>Solving for hypothesis #1</h3>
+                            </div>    
+                            <div class="case-study-sub-title">
+                                <h4>Theme: High contrast, high impact visual aesthetic</h4>
+                            </div>     
+                            <div class="image-container position-relative">
+                                <div class="case-study-image-block" data-aos="fade-up" data-aos-delay="200">
+                                </div>
+                                <div class="case-study-large-image" data-aos="fade-up" data-aos-delay="150">
+                                    <img src="assets/case-study-plans/hypothesis-1.png" alt="Small case study image" class="img-fluid">
+                                    <div class="text-columns-container">
+                                        <div class="text-column">
+                                            <p>I used a dark base color for the top of the fold to create a higher contrast, using one of the darkest colors in the design system.</p>
+                                        </div>
+                                        <div class="text-column">
+                                            <p>I added a larger header, to play around with more eye-catching copy.</p>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="case-study-content-title">
+                                <h3>Solving for Hypothesis #2</h3>
+                            </div>    
+                            <div class="case-study-sub-title">
+                                <h4>Theme: Speaking the language</h4>
+                            </div>     
+                            <div class="image-container position-relative">
+                                <div class="case-study-image-block" data-aos="fade-up" data-aos-delay="200">
+                                </div>
+                                <div class="case-study-large-image" data-aos="fade-up" data-aos-delay="150">
+                                    <img src="assets/case-study-plans/hypothesis-2.png" alt="Small case study image" class="img-fluid">
+                                    <div class="text-columns-container">
+                                        <div class="text-column">
+                                            <p>I played around with a playful, and more conversational Gen-Z coded tone of voice.</p>
+                                        </div>
+                                        <div class="text-column">
+                                            <p>I wanted to incorporate more “short form”-like content, as a high percentage of Gen-Z students enjoy platforms like TikTok.</p>
+                                        </div>
+                                        <div class="text-column">
+                                            <p>Focus on outcomes versus talking about features.</p>
+                                        </div>
+                                </div>
+                            </div>
+
+                            <div class="case-study-content-title">
+                                <h3>Solving for Hypothesis #3</h3>
+                            </div>    
+                            <div class="case-study-sub-title">
+                                <h4>Theme: Building more trust and understanding for the product</h4>
+                            </div>     
+                            <div class="image-container position-relative">
+                                <div class="case-study-image-block" data-aos="fade-up" data-aos-delay="200">
+                                </div>
+                                <div class="case-study-large-image" data-aos="fade-up" data-aos-delay="150">
+                                    <img src="assets/case-study-plans/hypothesis-3.png" alt="Small case study image" class="img-fluid">
+                                    <div class="text-columns-container">
+                                        <div class="text-column">
+                                            <p>Adding social proof to create more credibility and sense of “FOMO”.</p>
+                                        </div>
+                                        <div class="text-column">
+                                            <p>Adding more details to the content, so that students understand what they’re getting with a subscription.</p>
+                                        </div>
+                                        <div class="text-column">
+                                            <p>Highlighting breadth of subjects covered.</p>
+                                        </div>
+                                </div>
+                            </div>
+
+                                <div class="case-study-content-title">
+                                    <h3>Design exploration in context</h3>
+                                </div>    
+                                <div class="image-container position-relative">
+                                    <div class="case-study-video-block" data-aos="fade-up" data-aos-delay="200">
+                                        <video autoplay loop muted playsinline>
+                                            <source src="assets/case-study-plans/Videos/in-context-2.mov" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+
+          <!-- Influencing Cross Functional Teams -->
+          <section class="section-padding" id="influence">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="case-study-content-title">
+                            <h3>Influencing cross-functional teams</h3>
+                            <p class="body-text">I focused heavily on orchestrating all of the moving parts to build toward this design-driven vision, proactively setting up discussions and following up with different people to walk through ideas and refine them as a cohesive unit. I found that this was helpful in getting my partners to understand the rationale, while also contributing their feedback.</p>
+                        <div class ="case-study-sub-title">
+                            <h4>Working with Creative Marketing</h4>
+                        </div>    
+                            <p class="body-text">I worked closely with this team to inject the brand identity in our updated visuals. One of my challenges was to sell this team on the usage of darker colors, as this directly opposed the light and airy nature of the Chegg brand at this point in time. This team explored elements like gradients, illustrations & animated assets, where I focused on tying this in with our design system components and negotiating with stakeholders on what elements needed to be in this experience and how they would all function together.</p>
+                        </div>   
+                        <div class="image-container position-relative">
+                            <div class="case-study-image-block" data-aos="fade-up" data-aos-delay="200">
+                            </div>
+                            <div class="case-study-medium-image" data-aos="fade-up" data-aos-delay="150">
+                                <img src="assets/case-study-plans/creative-marketing.png" alt="Iterations with creative marketing" class="img-fluid">
+                            </div>
+                        </div>    
+                        <div class="case-study-sub-title">
+                            <h4>Adapting to sudden change</h4>
+                            <p class="body-text">Midway through this project, the business decided to give up on multi-month plans, as the economics were not making sense. This put a stand still on work momentarily. However, some of the first design changes were already slated for experimentation.</p>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experimentation 1 -->
+              <section class="section-padding" id="experimentation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="case-study-content-title">
+                                <h3>Launching experiment #1</h3>
+                                <div class ="case-study-sub-title">
+                                    <h4>Multivariate test</h4>
+                                </div>   
+                                <p class="body-text">For this experiment, we had multiple variants consisting of these 3 elements: updated header, dark color & social proof component. In this test, we found that the winning variant consisted of all 3 elements, versus in isolation. The winning variant also <strong>exceeded the original metric</strong> set forth by the business at the beginning of this project, creating a wave of excitement and reigniting the continuation of this design vision and further experiments. These initial results also served as the data needed to convince my partners in Creative Marketing to reconsider Chegg’s visual identity.</p> 
+                            </div>   
+                            <div class="image-container position-relative">
+                                <div class="case-study-image-block" data-aos="fade-up" data-aos-delay="200">
+                                </div>
+                                <div class="case-study-large-image" data-aos="fade-up" data-aos-delay="150">
+                                    <img src="assets/case-study-plans/test-1.png" alt="Control versus variant 1" class="img-fluid">
+                                    <div class="text-columns-container">
+                                        <div class="text-column">
+                                            <p>Control</p>
+                                        </div>
+                                        <div class="text-column">
+                                            <p>Winning variant</p>
+                                            <h5>+4.16% CVR</h5>
+                                        </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    <!-- Refinement -->
+        <section class="section-padding" id="refinement">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="case-study-content-title">
+                                <h3>Refining the visual design</h3>
+                                <p class="body-text">With the success of the first experiment, I continued working on refining the overall page structure and components. I worked with a content designer to refine the copy, and continued working with Creative Marketing to produce animations and brand visuals.</p> 
+                            </div>     
+                            <div class="image-container position-relative">
+                                <div class="case-study-video-block" data-aos="fade-up" data-aos-delay="200">
+                                    <video autoplay loop muted playsinline>
+                                        <source src="assets/case-study-plans/Videos/refine-2.mov" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Experimentation 2 -->
+        <section class="section-padding" id="experiment-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="case-study-content-title">
+                            <h3>Launching experiment #2</h3>
+                            <div class ="case-study-sub-title">
+                                <h4>A/B Test</h4>
+                            </div>   
+                            <p class="body-text">For this experiment, we incorporated an updated version of the original 3 elements, utilizing the refined visual design for our background color and social proof component. This saw an even further increase to conversion rate, and really solidified that our customers really resonated with this new look and feel. This caused an uproar of excitement throughout the company, as this amount of <strong>increase to CVR was the most we had seen on this surface, <i>in years.</i></strong> My colleagues were calling for everything to be turned purple!</p>
+                        </div>   
+                        <div class="image-container position-relative">
+                            <div class="case-study-image-block" data-aos="fade-up" data-aos-delay="200">
+                            </div>
+                            <div class="case-study-large-image" data-aos="fade-up" data-aos-delay="150">
+                                <img src="assets/case-study-plans/test-2.png" alt="Control versus variant 2" class="img-fluid">
+                                <div class="text-columns-container">
+                                    <div class="text-column">
+                                        <p>Control</p>
+                                    </div>
+                                    <div class="text-column">
+                                        <p>Winning variant</p>
+                                        <h5>+3.08% CVR</h5>
+                                    </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outcomes Section -->
+        <section class="section-padding" id="outcomes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-category-title">
+                            <h2>Outcomes</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Finalizing Design -->
+    <section class="section-padding" id="final-design">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="case-study-content-title">
+                        <h3>Finalizing the design</h3>
+                        <p class="body-text">With the success of the first set of experiments, I continued to tinker with the “final” vision of this design with my working team and cross-functional partners. We produced new animations and solidified the sections of this page, with the plan to continue experimenting on the additional components below the fold. </p>
+                    </div>   
+                    <div class="image-container position-relative">
+                        <div class="case-study-image-block" data-aos="fade-up" data-aos-delay="200">
+                        </div>
+                        <div class="case-study-large-image" data-aos="fade-up" data-aos-delay="150">
+                            <img src="assets/case-study-plans/final-1.png" alt="Final Design" class="img-fluid">
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact -->
+        <section class="section-padding" id="impact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="case-study-content-title">
+                            <h3>Impact</h3>
+                            <div class ="case-study-sub-title">
+                                <h4>To recap, our experiments resulted in:</h4>
+                            </div>   
+                            <p class="body-text-result">7% increase in CVR, a value of $8~10M/YoY</p>
+                            <p class="body-text">These results had a significant impact, as we had not seen these types of numbers in years. This brought a lot of excitement throughout the business. Other teams were interested in integrating our findings into their own work and leaning more into design-led strategies. Notably, the official Chegg brand, and general visual design language at the company started evolving itself toward this bolder, high contrast palette that you will still see on the platform today.</p>
+                            <p class="body-text">Moving forward, the team is continuing experimentation on this surface, adding in the additional animations and content below the fold.</p>
+                            <div class ="case-study-sub-title">
+                                <h4>My takeaways</h4>
+                            </div>   
+                            <ul class="body-text">
+                                <li>If you believe in your hypothesis, find a way to launch the experiment.</li>
+                                <li>Data can be leverage to negotiate with stakeholders to build confidence toward a certain vision.</li>
+                                <li>When we get to a point of stagnant growth, we can explore ways to create a new baseline. Oftentimes this means we’re doing something that’s not meeting the needs of our human customers.</li>
+                            </ul>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer py-3 text-center small">
+        <div class="container">
+            <p class="mb-0">Made with ♥ by Ana Mora with Figma, Gemini, Cursor & Claude in 2025.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

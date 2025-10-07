@@ -1,0 +1,21 @@
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VS Code / Cursor
+.vscode/
+.cursor/
+
+# Sensitive files
+config.js
+.env
+api-keys.js
+
+# Temporary files
+*.tmp
+*.temp
+
+# If you add node modules later
+node_modules/
