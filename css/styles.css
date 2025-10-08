@@ -5,6 +5,7 @@
     --white: #FFFFFF;
     --ink: #3A1927; /* Plum */
     --shell: #F9F4F9; /* Soft Pink */
+    --tag: #D3E0FF; /*sky blue*/
 }
 
 html, body {
@@ -294,6 +295,32 @@ html, body {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
+}
+
+/* Coming Soon Badge */
+.coming-soon-badge {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: var(--tag);
+    color: var(--primary);
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    z-index: 10;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Optional: Slightly dim the card to indicate it's coming soon */
+.work-card:has(.coming-soon-badge) {
+    opacity: 0.85;
+}
+
+.work-card:has(.coming-soon-badge):hover {
+    opacity: 1;
 }
 
 /* About */
