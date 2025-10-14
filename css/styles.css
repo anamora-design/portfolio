@@ -420,8 +420,8 @@ html, body {
 /* Testimonial body text styling - separate from other body text */
 .testimonial-text {
     font-family: 'DM sans';
-    font-weight: 100;
-    font-size: 14pt;
+    font-size: 1rem ;
+    font-weight: 200;
     line-height: 1.5;
     font-style: normal;
 }
