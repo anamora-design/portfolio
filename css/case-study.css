@@ -97,6 +97,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
 .case-study-large-image img {
